@@ -4,9 +4,10 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-/* body{
-    background: #1f242d;
+/* body {
+  overflow-y: hidden;
 } */
+
 a{
     color:aliceblue;
     text-decoration: none;
@@ -56,7 +57,7 @@ a{
 .navbar ul li a{
     font-size: 15px;
     font-weight: 600;
-    transition: 2.5s;
+    transition: 1.5s;
 }
 .navbar ul li:hover a{
     color: rgb(224, 213, 97);
@@ -66,12 +67,13 @@ a{
     color: rgb(224, 213, 97);
 }
 
+
 /* Home section */
 .home{
     display: flex;
     align-items: center;
     height: 100vh;
-    gap: 50px;
+    gap: 3rem;
     padding: 30px 10px 10px;
     color: rgb(224, 213, 97);
     visibility: hidden;
@@ -235,7 +237,7 @@ a{
 .bars-animation .bar{
     width: 100%;
     height: 100%;
-    background: #1f242d;
+    background: #1e2632;
     /* border: 2px solid red; */
     transform: translateY(-100%);
     animation: show-bars .5s ease-in-out forwards;
@@ -246,4 +248,98 @@ a{
     100%{
         transform: translateY(0%);
     }
+}
+
+
+
+/* About Me-Page */
+
+.about_me{
+    color: rgb(224, 213, 97);
+    position: relative;
+    top: 50px;
+    padding: 35px;
+    
+}
+.me_p{
+    text-align: justify;
+    margin: 12px 0;
+    font-size: 1.2rem;
+}
+.me_ul .me_h3{
+    margin: 5px -40px;
+    font-size: 1.3rem;
+}
+.me_ul{
+    list-style: none;
+    margin: 10px 60px;
+    font-size: 1.1rem;
+}
+.list-skills{
+    display: flex;
+}
+
+
+.logos-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  /* overflow: hidden; */
+}
+
+.circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  /* overflow-y: hidden; */
+  margin: -100px 80px;
+}
+
+.logos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  transform-origin: center;
+  /* overflow: hidden; */
+}
+
+.logos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  border: 2px solid rgb(224, 213, 97);
+  border-radius: 50%;
+  background-color: #0f172a;
+  color: rgb(224, 213, 97);
+  font-size: 24px;
+  text-decoration: none;
+  transition: .5s;
+}
+.logos a:hover{
+    background: rgb(224, 213, 97);
+    color: #1f242d;
+    box-shadow: 0 0 10px rgb(224, 213, 97);
+}
+
+
+.logos:nth-child(1) {
+  transform: rotate(0deg) translate(100px) rotate(-0deg);
+}
+.logos:nth-child(2) {
+  transform: rotate(72deg) translate(100px) rotate(-72deg);
+}
+.logos:nth-child(3) {
+  transform: rotate(144deg) translate(100px) rotate(-144deg);
+}
+.logos:nth-child(4) {
+  transform: rotate(216deg) translate(100px) rotate(-216deg);
+}
+.logos:nth-child(5) {
+  transform: rotate(288deg) translate(100px) rotate(-288deg);
 }
