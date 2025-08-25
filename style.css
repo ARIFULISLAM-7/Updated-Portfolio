@@ -294,7 +294,7 @@ a{
   height: 300px;
   border-radius: 20%;
   /* overflow-y: hidden; */
-  margin: -100px 80px;
+  margin: -100px 140px;
 }
 
 .logos {
@@ -329,17 +329,84 @@ a{
 
 
 .logos:nth-child(1) {
-  transform: rotate(0deg) translate(100px) rotate(-0deg);
+  transform: rotate(0deg) translate(80px) rotate(-0deg);
 }
 .logos:nth-child(2) {
-  transform: rotate(72deg) translate(100px) rotate(-72deg);
+  transform: rotate(72deg) translate(80px) rotate(-72deg);
 }
 .logos:nth-child(3) {
-  transform: rotate(144deg) translate(100px) rotate(-144deg);
+  transform: rotate(144deg) translate(80px) rotate(-144deg);
 }
 .logos:nth-child(4) {
-  transform: rotate(216deg) translate(100px) rotate(-216deg);
+  transform: rotate(216deg) translate(80px) rotate(-216deg);
 }
 .logos:nth-child(5) {
-  transform: rotate(288deg) translate(100px) rotate(-288deg);
+  transform: rotate(288deg) translate(80px) rotate(-288deg);
+}
+
+
+/* Projects-Page */
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Left GitHub icon styling */
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left a {
+    font-size: 4rem;
+    padding: 2rem;
+    border: 2px solid rgb(224, 213, 97);
+    border-radius: 50%;
+    color: rgb(224, 213, 97);
+    font-size: 12rem;
+    text-decoration: none;
+    transition: 1.5s;
+}
+
+.left a:hover {
+    background: rgb(224, 213, 97);
+    color: #1f242d;
+    box-shadow: 0 0 10px rgb(224, 213, 97);
+}
+
+/* Right project list styling */
+.right .proj_ul .me_h3{
+    position: relative;
+    bottom: 18px;
+    left: 5rem;
+}
+.right .proj_ul {
+    color:rgb(224, 213, 97);
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+    max-width: 40vw;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 600;
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+
+.proj_ul li {
+    margin-bottom: 0.8rem;
+}
+
+
+/* services-page */
+
+.continue{
+    color:rgb(224, 213, 97);
+    text-align: center;
+    position: relative;
+    top: 17rem;
 }
