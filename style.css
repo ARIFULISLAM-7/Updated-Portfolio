@@ -257,7 +257,7 @@ a{
 .about_me{
     color: rgb(224, 213, 97);
     position: relative;
-    top: 50px;
+    top: 35px;
     padding: 35px;
     
 }
@@ -412,10 +412,15 @@ a{
     padding: 40px;
     text-align: center; 
 }
-
+.services .text{
+    position: relative;
+    text-align: center;
+    top: 5rem;
+    color: rgb(224, 213, 97);
+}
 .boxes .box_service {
     position: relative;
-    top: 13rem;
+    top: 10rem;
     width: 150px;
     padding: 25px;
     border: 2px solid rgb(224, 213, 97);
@@ -440,4 +445,99 @@ a{
     font-size: 16px;
     font-weight: bold;
     color: rgb(224, 213, 97);
+}
+
+
+/* contact_page */
+/* Centering container */
+.contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  width: 100%;
+  gap: 20rem;
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+/* Form and image sections */
+.contact_left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact_left textarea{
+    height: 120px;
+    padding-top: 25px;
+    border-radius: 20px;
+}
+.contact_left_title h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color:rgb(224, 213, 97);
+}
+.contact_left_title hr{
+    border: none;
+    width: 160px;
+    height: 3px;
+    background-color: rgb(224, 213, 97);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+.contact_input {
+    width: 300px;
+    height: 60px;
+    border: 1.5px solid rgb(224, 213, 97);
+    outline: none;
+    padding-left: 25px;
+    color:rgb(224, 213, 97);
+    border-radius: 30px;
+    background: transparent;
+    transition: .5s;
+}
+.contact_input:focus{
+    border: 2px solid rgb(224, 213, 97);
+    background: #15171e;
+}
+.contact_input::placeholder{
+    color:rgb(224, 213, 97);
+    font-size: 16px;
+}
+
+/* Button */
+button[type="submit"] {
+  height: 30px;
+  width: 80px;
+  border: 1.5px solid rgb(224, 213, 97);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color:rgb(224, 213, 97);
+  background: transparent;
+  transition: .5s;
+}
+button[type="submit"]:hover{
+    color: black;
+    background: rgb(224, 213, 97);
+    box-shadow: 0 0 10px rgb(224, 213, 97);
+}
+
+/* Image */
+.contact_right img {
+  width: 400px; /* or any size you prefer */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width:800px) {
+    .contact_input{
+        width:80vw;
+    }
+    .contact_right{
+        display: none;
+    }
 }
