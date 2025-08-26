@@ -403,10 +403,41 @@ a{
 
 
 /* services-page */
+.boxes {
+    display: flex;
+    justify-content: center;     /* Horizontal centering */
+    align-items: center;         /* Vertical centering */
+    flex-wrap: wrap;             /* Allows wrapping on smaller screens */
+    gap: 40px;                   /* Space between boxes */
+    padding: 40px;
+    text-align: center; 
+}
 
-.continue{
-    color:rgb(224, 213, 97);
-    text-align: center;
+.boxes .box_service {
     position: relative;
-    top: 17rem;
+    top: 13rem;
+    width: 150px;
+    padding: 25px;
+    border: 2px solid rgb(224, 213, 97);
+    border-radius: 10px;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+
+.boxes > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(224, 213, 97);
+}
+
+.box-logo i {
+    font-size: 40px;
+    color: rgb(224, 213, 97);
+    margin-bottom: 10px;
+}
+
+.service_p {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(224, 213, 97);
 }
