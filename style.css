@@ -4,9 +4,10 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-/* body {
+body {
+    color: #1f242d;
   overflow-y: hidden;
-} */
+}
 
 a{
     color:aliceblue;
